@@ -11,8 +11,7 @@ email: support@keeptruckin.com
 description: "This site hosts KeepTruckin's Public API documentation."
 baseurl: '/public_api_docs' # the subpath of your site, e.g. /blog
 url: 'https://keeptruckin.github.com' # the base hostname & protocol for your site
-twitter_username: keeptruckin
-github_username:  keeptruckin
+permalink: :title.html
 
 # Build settings
 markdown: kramdown

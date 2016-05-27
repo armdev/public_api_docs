@@ -1,3 +1,35 @@
+// Reboot
+//
+// Global resets to common HTML elements and more for easier usage by Bootstrap.
+// Adds additional rules on top of Normalize.css, including several overrides.
+
+
+// Reset the box-sizing
+//
+// Change from `box-sizing: content-box` to `border-box` so that when you add
+// `padding` or `border`s to an element, the overall declared `width` does not
+// change. For example, `width: 100px;` will always be `100px` despite the
+// `border: 10px solid red;` and `padding: 20px;`.
+//
+// Heads up! This reset may cause conflicts with some third-party widgets. For
+// recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing.
+//
+// Credit: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
 /**
  * Reset some basic elements
  */
@@ -9,13 +41,12 @@ dl, dd, ol, ul, figure {
 }
 
 
-
 /**
  * Basic styling
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
+    color: $gray-base;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -94,13 +125,9 @@ a {
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $gray-base;
+        text-decoration: none;
     }
 }
 
@@ -110,8 +137,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $gray-base;
+    border-left: 4px solid $gray-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -130,9 +157,10 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid #eaeaea;
     border-radius: 3px;
-    background-color: #eef;
+    color: #585858;
+    background-color: #f8f8f8;
 }
 
 code {
@@ -163,13 +191,6 @@ pre {
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
 }
 
 
@@ -177,7 +198,8 @@ pre {
 /**
  * Clearfix
  */
-%clearfix {
+%clearfix,
+.clearfix {
 
     &:after {
         content: "";
@@ -200,7 +222,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $gray-base;
         }
     }
 }
