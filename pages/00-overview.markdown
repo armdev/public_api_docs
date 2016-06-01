@@ -2,7 +2,7 @@
 layout: page
 title:  "Overview"
 categories: introduction
-permalink: overview
+tags: overview
 ---
 KeepTruckin makes it easy for you to access all of your fleet management data, so you can take advantage of the powerful data collection technology in the KeepTruckin ELD and mobile apps.
 

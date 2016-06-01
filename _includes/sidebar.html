@@ -1,42 +1,52 @@
 <div id="scroller-anchor"></div>
-{% if page.url contains 'overview' %}
-<aside class="site-sidebar">
-{% else %}
 <aside class="site-sidebar-fixed" id="site-sidebar">
-{% endif %}
   <ul class="sidebar-menu sidebar-menu-introduction">
     <li class="sidebar-header">INTRODUCTION</li>
-    {% for node in site.pages %}
-      {% if node.categories contains 'introduction' %}
-        {% if page.url == node.url %}
-          <li class="active">
-            <a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
-            {% if node.categories contains 'getting-started' %}
-              <ul class="sidebar-menu sidebar-menu-introduction">
-                <li class="active"><a href="#authentication">Authentication</a></li>
-                <li><a href="#time-zone">Time Zone</a></li>
-                <li><a href="#response-codes">Response Codes</a></li>
-                <li><a href="#api-call">Test out an API call</a></li>
-              </ul>
-            {% endif %}
-          </li>
-        {% else %}
-          <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+    <li class="active"> <a href="#overview">Overview</a> </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul class="sidebar-menu sidebar-sub-menu sidebar-menu-introduction">
+        <li><a href="#authentication">Authentication</a></li>
+        <li><a href="#time-zone">Time Zone</a></li>
+        <li><a href="#response-codes">Response Codes</a></li>
+        <li><a href="#api-call">Test out an API call</a></li>
+      </ul>
+    </li>
   </ul>
 
   <ul class="sidebar-menu sidebar-menu-end-points">
     <li class="sidebar-header">END POINTS</li>
-    {% for node in site.pages %}
-      {% if node.categories contains 'endpoint' %}
-        {% if page.url == node.url %}
-          <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
-        {% else %}
-          <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+    <li>
+      <a href="#users">Users</a>
+      <ul class="sidebar-menu sidebar-sub-menu sidebar-menu-users">
+        <li><a href="#list-company-users">List company users</a></li>
+        <li><a href="#specific-user">Get a specific user</a></li>
+        <li><a href="#new-user">Create a new user</a></li>
+        <li><a href="#existing-user">Update an existing user</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#groups">Groups</a>
+      <ul class="sidebar-menu sidebar-sub-menu sidebar-menu-groups">
+        <li><a href="#list-of-groups">Retrieve list of groups</a></li>
+        <li><a href="#specific-groups">Get a specific group</a></li>
+        <li><a href="#create-groups">Create group</a></li>
+        <li><a href="#update-groups">Update group</a></li>
+        <li><a href="#delete-groups">Delete group</a></li>
+        <li><a href="#list-of-users-in-group">Retrieve list of users in a group</a></li>
+        <li><a href="#list-of-vehicles-in-group">Retrieve list of group vehicles</a></li>
+        <li><a href="#add-users-to-group">Add users to a group</a></li>
+        <li><a href="#add-vehicles-to-group">Add vehicles to a group</a></li>
+        <li><a href="#delete-users-from-group">Delete users from a group</a></li>
+        <li><a href="#delete-vehicles-from-group">Delete vehicles from a group</a></li>
+      </ul>
+    </li>
+
+    <li> <a href="#drivers-available-time">Driver’s Available Time</a> </li>
+    <li> <a href="#hos-violations">HOS Violations</a> </li>
+    <li> <a href="#drivers-current-locations">Driver Current Locations</a> </li>
+    <li> <a href="#vehicle-current-locations">Vehicle Current Locations</a> </li>
+    <li> <a href="#send-messages">Send Messages</a> </li>
   </ul>
 </aside>

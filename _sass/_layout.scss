@@ -25,9 +25,8 @@
         margin-left: 20px;
         font-size: 1.125rem;
         font-weight: 300;
-        color: #ececec;
+        color: #ffffff;
 
-        &,
         &:visited,
         &:hover {
             text-decoration: none;
@@ -52,7 +51,35 @@
 /**
  * Site footer
  */
+
+.site-footer-2 {
+    padding: 50px 0;
+    line-height: 26px;
+
+    .got-question {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $gray-dark;
+    }
+
+    .contact-us,
+    .footer-link {
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: $gray-light;
+    }
+
+    .separator {
+        display: inline-block;
+        margin: 0 15px;
+        width: 1px;
+        height: 26px;
+        background: #ebebeb;
+    }
+}
+
 .site-footer {
+    position: relative;
     padding: 100px 0;
     background-color: $header-footer-bg;
     border-top: 1px solid $gray-light;
@@ -175,28 +202,31 @@
  */
 .site-sidebar {
     float: left;
-    width: 200px;
+    width: $sidebar-width;
     z-index: 1;
 
     @at-root #{&}-fixed {
+        position: fixed;
+        top: 70px;
+        padding-top: 39px;
+        padding-right: 20px;
         float: left;
-        top: 130px;
-        width: 200px;
-        z-index: 1;
-        -webkit-transition: top 0.2s ease-out;
-                transition: top 0.2s ease-out;
+        width: $sidebar-width;
+        height: calc(100% - 70px);
+        overflow: hidden;
+        overflow-y: scroll;
     }
 }
 
 .sidebar-menu {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding: 0;
     list-style: none;
 
     .sidebar-header {
         display: block;
-        margin-bottom: 6px;
+        margin-bottom: 7px;
         font-size: 0.875rem;
         font-weight: $base-font-weight;
         text-transform: uppercase;
@@ -212,20 +242,21 @@
           font-weight: $base-font-weight;
           line-height: 1.928571;
           color: $gray-light;
-          white-space: nowrap;
         }
 
         ul {
             display: none;
             margin-bottom: 0;
-            padding-left: 15px;
+            padding-left: 40px;
+
+            li > a { font-size: 0.875rem; }
         }
     }
 
     li:hover > a,
     li.active > a { color: $brand-color; }
 
-    li.active ul { display: block; }
+    li.open ul { display: block; }
 
     &.sidebar-menu-platform {
         margin-bottom: 40px;
@@ -243,7 +274,7 @@
 }
 
 .page-content {
-    padding: ($spacing-unit + 50) 0;
+    padding-top: 48px;
     min-height: 518px;
 }
 
@@ -277,11 +308,12 @@
  * Posts
  */
 .post {
-    padding: 40px;
+    padding: 72px 40px;
     background-color: #ffffff;
-    border: 1px solid #eaeaea;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
 
-    + .post { margin-top: 40px; }
+    + .post { margin-top: 48px; }
 }
 .post-header {
     margin-bottom: $spacing-unit;
@@ -289,8 +321,8 @@
 
 .post-title {
     margin-bottom: 20px;
-    font-size: 24px;
-    line-height: 1;
+    font-size: 1.5rem;
+    line-height: 3rem;
     color: $gray-dark;
 }
 
@@ -309,7 +341,7 @@
     p {
         font-size: 0.875rem;
         font-weight: 300;
-        line-height: 1.8;
+        line-height: 24px;
         color: $gray-base;
 
         + p { margin-top: 20px; }
@@ -318,15 +350,28 @@
     /**
      * Markdown overrides
      */
-    .highlight { margin: 10px 0 20px; }
+    .highlight {
+        margin: 20px 0 20px;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid #eeeeee;
+        border-radius: 5px;
+
+        code {
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 24px;
+            color: $gray-light;
+        }
+    }
 
     table {
         margin-top: 20px;
         margin-bottom: 30px;
         width: 100%;
         text-align: center;
-        background-color: #f8f8f8;
-        border: 1px solid #eaeaea;
+        background-color: #f4f4f4;
+        border: 1px solid #eeeeee;
         border-spacing: 0;
         border-collapse: separate;
         border-radius: 3px;
@@ -342,9 +387,9 @@
             th {
                 padding: 10px 5px;
                 font-weight: $base-font-weight;
-                border-bottom: 1px solid #eaeaea;
+                border-bottom: 1px solid #eeeeee;
 
-                &:not(:first-child) { border-left: 1px solid #eaeaea; }
+                &:not(:first-child) { border-left: 1px solid #eeeeee; }
             }
         }
 
@@ -353,15 +398,17 @@
             font-size: 0.875rem;
             font-weight: 300;
             color: $gray-light;
+            background-color: #f8f8f8;
 
-            &:not(:first-child) { border-left: 1px solid #eaeaea; }
+            &:not(:first-child) { border-left: 1px solid #eeeeee; }
         }
     }
 
     h5 {
         margin-top: 20px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
+        line-height: 36px;
         color: $gray-dark;
     }
 
@@ -369,6 +416,7 @@
         margin-top: 15px;
         font-size: 0.875rem;
         font-weight: 500;
+        line-height: 24px;
         color: $gray-light;
     }
 
@@ -464,3 +512,10 @@
     color: $gray-light;
     border-color: #cacacc;
 }
+
+/**
+ * Utility classes
+ */
+.pull-left { float: left; }
+
+.pull-right{ float: right; }

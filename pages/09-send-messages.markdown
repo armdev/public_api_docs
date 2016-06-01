@@ -3,7 +3,7 @@ layout: post
 title:  "Send Messages"
 date:   2016-05-24 12:01:00 +0500
 categories: endpoint
-permalink: send-messages
+tags: send-messages
 ---
 
 #### 1) Send a Message

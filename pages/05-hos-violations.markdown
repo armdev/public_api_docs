@@ -3,7 +3,7 @@ layout: post
 title:  "HOS Violations"
 date:   2016-05-24 12:04:00 +0500
 categories: endpoint
-permalink: hos-violations
+tags: hos-violations
 ---
 
 #### 1) List of hos violations for a company’s users

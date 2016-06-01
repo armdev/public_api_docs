@@ -5,7 +5,7 @@ date:   2016-05-20 12:05:47 +0500
 categories:
   - introduction
   - getting-started
-permalink: getting-started
+tags: getting-started
 ---
 Our APIs can all be accessed through HTTPS requests to URLs like
 
@@ -13,7 +13,9 @@ Our APIs can all be accessed through HTTPS requests to URLs like
 https://api.keeptruckin.com/v1/<endpoint>
 ```
 
-##### <a name="authentication"></a> Authentication
+<div id="authentication" markdown="1">
+
+##### Authentication
 
 We use a simple and secure authentication system. You must get an API key from the Keep Truckin dashboard, and provide that key on every API request. You can create multiple API keys for your company. If a key needs to be disabled because someone with it leaves the company or if it gets shared accidentally, you can disable it in the [KeepTruckin dashboard](https://dashboard.keeptruckin.com){:target="_blank"}. You should not share your API key with anyone outside your organization.
 
@@ -23,7 +25,11 @@ To authenticate, the API client needs to specify a Company API key in the follow
 | :-------------: | :-------------------------: |
 | X-Api-Key       | &#60;company api key&#62;   |
 
-##### <a name="time-zone"></a> Time Zone
+</div>
+
+<div id="time-zone" markdown="1">
+
+##### Time Zone
 
 All times are in UTC, unless a timezone is specified in the request header.
 
@@ -47,7 +53,11 @@ All times are in UTC, unless a timezone is specified in the request header.
 curl -H ‘X-API-KEY: 12345’ -H ‘X-TIME-ZONE: Alaska’ ‘https://api.keeptruckin.com/v1/users’
 ```
 
-##### <a name="response-codes"></a> Response Codes
+</div>
+
+<div id="response-codes" markdown="1">
+
+##### Response Codes
 
 The APIs respond with codes in the 200's, 400's, and 500's. Your API client  should handle each class differently.
 
@@ -63,7 +73,11 @@ These indicate there was a problem with the request, like missing parameters or 
 
 These indicate there was a problem with the server and should be retried. They should only occur when the server is unreachable or misconfigured.
 
-##### <a name="api-call"></a> Test out an API call
+</div>
+
+<div id="api-call" markdown="1">
+
+##### Test out an API call
 
 You can confirm your API key works and everything is setup correctly by trying a basic request to get a list of the drivers in your fleet. Try the following command on the command line:
 
@@ -99,4 +113,4 @@ If you do this with an API key associated with your fleet, you should get a resp
   }
 }
 ```
-
+</div>

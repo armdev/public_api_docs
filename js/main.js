@@ -1,44 +1,44 @@
 $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    $(this).parent().addClass('active').siblings().removeClass('active');
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - 130
-        }, 300);
-        return false;
-      }
-    }
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(window).off('scroll');
+
+    $('a').each(function () {
+      $(this).parent().removeClass('active');
+    })
+    $(this).parent().addClass('active');
+
+    var target = this.hash,
+        menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top - 130
+    }, 500, 'swing', function () {
+      window.location.hash = target;
+      $(window).on('scroll', onScroll);
+    });
   });
 
-  // Sticky sidebar
-  var a = function () {
-    var b = $(window).scrollTop();
-    var d = $("#scroller-anchor").offset().top;
-    var f = $("#site-footer").offset().top;
-    var c = $("#site-sidebar");
-    var h = $("#site-sidebar").height() + 35; // margin
+  var onScroll = function() {
+    var scrollPos = $(document).scrollTop() + 130;
 
-    if (b > d) {
-      var myTop = $(window).scrollTop() + 130;
-      if (myTop > f - h) myTop = f - h;
-      c.css({
-        position: "absolute",
-        top: myTop,
-        bottom: ""
-      })
-    } else {
-      if (b <= d) {
-        c.css({
-          position: "absolute",
-          top: "",
-          bottom: ""
-        })
+    $('#site-sidebar a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr('href'));
+      var menuClass = 'active';
+
+      if ( currLink.parent().has('.sidebar-sub-menu').length == 1 ) {
+        menuClass += ' open';
       }
-    }
-  };
-  $(window).scroll(a);
-  a();
+
+      if (refElement.offset().top <= scrollPos && refElement.offset().top + refElement.outerHeight() > scrollPos) {
+        $('#site-sidebar a').removeClass(menuClass);
+        currLink.parent().addClass(menuClass);
+      } else {
+        currLink.parent().removeClass(menuClass);
+      }
+    });
+  }
+
+  $(window).on('scroll', onScroll);
 });
