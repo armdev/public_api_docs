@@ -12,15 +12,32 @@
     border-bottom: 1px solid darken($header-footer-bg, 5%);
     z-index: 1030;
 
-    @at-root #{&}-fixed-spacer { min-height: 70px; }
+    @at-root #{&}-fixed-spacer {
+        min-height: 70px;
+
+        @media (max-width: 630px) { min-height: 122px; }
+
+        @media (max-width: 420px) { min-height: 160px; }
+    }
+
+    @media (max-width: 630px) { text-align: center; }
+}
+
+.site-logo {
+    display: block;
+    margin-bottom: 20px;
+    @media (min-width: 630px) {
+        float: left;
+        margin-bottom: 0;
+    }
 }
 
 .site-title {
     margin-bottom: 0;
-    float: left;
+
+    @media (min-width: 630px) { float: left; }
 
     @at-root #{&}-api {
-        float: left;
         margin-top: 3px;
         margin-left: 20px;
         font-size: 1.125rem;
@@ -31,6 +48,13 @@
         &:hover {
             text-decoration: none;
             color: #ececec;
+        }
+
+        @media (min-width: 630px) { float: left; }
+
+        @media (max-width: 420px) {
+            margin: 10px 0 0;
+            display: block;
         }
     }
 }
@@ -46,6 +70,8 @@
         // Gaps between nav items, but not on the last one
         &:not(:last-child) { margin-right: 20px; }
     }
+
+    @media (max-width: 630px) { float: none; }
 }
 
 /**
@@ -205,6 +231,8 @@
     width: $sidebar-width;
     z-index: 1;
 
+    @media (max-width: $breakpoint) { display: none; }
+
     @at-root #{&}-fixed {
         position: fixed;
         top: 70px;
@@ -215,6 +243,8 @@
         height: calc(100% - 70px);
         overflow: hidden;
         overflow-y: scroll;
+
+        @media (max-width: $breakpoint) { display: none; }
     }
 }
 
@@ -271,6 +301,8 @@
 .site-content {
     float: right;
     width: 75%;
+
+    @media (max-width: $breakpoint) { width: 100%; }
 }
 
 .page-content {
@@ -433,6 +465,7 @@
         font-size: 0.875rem;
         font-weight: 300;
         line-height: 1.8;
+        word-wrap: break-word;
         color: $gray-base;
     }
 }

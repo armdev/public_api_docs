@@ -28,6 +28,10 @@ $content-width:    1000px;
 
 // Width of the sidebar area
 $sidebar-width:    (($content-width - 40) / 100) * 25;
+
+// Width of the sidebar area
+$breakpoint:    960px;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
