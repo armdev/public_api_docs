@@ -52,7 +52,7 @@ GET /v1/available_time
         "id": 161,
         "first_name": "Alexandrea",
         "last_name": "Koch",
-        "driver_comany_id": 75,
+        "driver_company_id": 75,
         "available_time": {
           "drive": 39600,
           "shift": 50400,
@@ -66,7 +66,7 @@ GET /v1/available_time
         "id": 159,
         "first_name": "Anahi",
         "last_name": "Flatley",
-        "driver_comany_id": 75,
+        "driver_company_id": 75,
         "available_time": {
           "drive": 39600,
           "shift": 50400,
@@ -80,7 +80,7 @@ GET /v1/available_time
         "id": 160,
         "first_name": "Golden",
         "last_name": "Cummings",
-        "driver_comany_id": 75,
+        "driver_company_id": 75,
         "available_time": {
           "drive": 39600,
           "shift": 50400,
@@ -114,7 +114,7 @@ GET /v1/available_time.xml
             <id>161</id>
             <first_name>Alexandrea</first_name>
             <last_name>Koch</last_name>
-            <driver_comany_id>75</driver_comany_id>
+            <driver_company_id>75</driver_company_id>
             <available_time>
                 <drive>39600</drive>
                 <shift>50400</shift>
@@ -126,7 +126,7 @@ GET /v1/available_time.xml
             <id>159</id>
             <first_name>Anahi</first_name>
             <last_name>Flatley</last_name>
-            <driver_comany_id>75</driver_comany_id>
+            <driver_company_id>75</driver_company_id>
             <available_time>
                 <drive>39600</drive>
                 <shift>50400</shift>
@@ -138,7 +138,7 @@ GET /v1/available_time.xml
             <id>160</id>
             <first_name>Golden</first_name>
             <last_name>Cummings</last_name>
-            <driver_comany_id>75</driver_comany_id>
+            <driver_company_id>75</driver_company_id>
             <available_time>
                 <drive>39600</drive>
                 <shift>50400</shift>
