@@ -3,8 +3,10 @@ layout: post
 title:  "Users"
 date:   2016-05-24 12:07:00 +0500
 categories: endpoint
-permalink: users
+tags: users
 ---
+
+<div id="list-company-users" markdown="1">
 
 #### 1) List company users
 
@@ -162,6 +164,10 @@ GET /users.xml
 </data>
 ```
 
+</div>
+
+<div id="specific-user" markdown="1">
+
 #### 2) Get a specific user
 
 ###### Request format:
@@ -241,6 +247,10 @@ GET /users/158.xml
 </data>
 ```
 
+</div>
+
+<div id="new-user" markdown="1">
+
 #### 3) Create a new user
 
 ###### Request format:
@@ -295,6 +305,10 @@ POST /users
 
 Same as specific user's response.
 
+</div>
+
+<div id="existing-user" markdown="1">
+
 #### 4) Update an existing user
 
 ###### Request format:
@@ -344,3 +358,5 @@ PUT /users/1137
 ###### Sample Response:
 
 Same as specific user's response.
+
+</div>

@@ -3,7 +3,7 @@ layout: post
 title:  "Vehicle Current Locations"
 date:   2016-05-24 12:02:00 +0500
 categories: endpoint
-permalink: vehicle-current-locations
+tags: vehicle-current-locations
 ---
 
 #### 1) List of vehicles with current location and current driver

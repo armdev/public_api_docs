@@ -3,7 +3,7 @@ layout: post
 title:  "Driver’s Available Time"
 date:   2016-05-24 12:05:00 +0500
 categories: endpoint
-permalink: drivers-available-time
+tags: drivers-available-time
 ---
 
 #### 1) List of given users with available times

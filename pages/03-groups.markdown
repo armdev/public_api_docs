@@ -3,8 +3,10 @@ layout: post
 title:  "Groups"
 date:   2016-05-24 12:06:00 +0500
 categories: endpoint
-permalink: groups
+tags: groups
 ---
+
+<div id="list-of-groups" markdown="1">
 
 #### 1) Retrieve list of groups
 
@@ -117,6 +119,10 @@ GET /groups.xml
 </data>
 ```
 
+</div>
+
+<div id="specific-groups" markdown="1">
+
 #### 2) Get a specific group
 
 ###### Request format:
@@ -197,6 +203,10 @@ GET /groups/7.xml
 </data>
 ```
 
+</div>
+
+<div id="create-groups" markdown="1">
+
 #### 3) Create group
 
 ###### Request format:
@@ -242,6 +252,10 @@ curl -H "X-API-KEY: 12345" -d "name=foo" "https://api.keeptruckin.com/v1/groups"
 ###### Sample Response:
 
 Same as specific group's response
+
+</div>
+
+<div id="update-groups" markdown="1">
 
 #### 4) Update group
 
@@ -289,6 +303,10 @@ curl -X PUT -H "X-API-KEY: 12345" -d "name=foo" "https://api.keeptruckin.com/v1/
 
 Same as create group request
 
+</div>
+
+<div id="delete-groups" markdown="1">
+
 #### 5) Delete group
 
 ###### Request format:
@@ -322,6 +340,10 @@ Returns success response.
 ```
 DELETE /groups/1
 ```
+
+</div>
+
+<div id="list-of-users-in-group" markdown="1">
 
 #### 6) Retrieve list of users in a group
 
@@ -454,6 +476,10 @@ GET /groups/1/users.xml
 </data>
 ```
 
+</div>
+
+<div id="list-of-vehicles-in-group" markdown="1">
+
 #### 7) Retrieve list of group vehicles
 
 ###### Request format:
@@ -572,6 +598,10 @@ GET /groups/5/vehicles.xml
 </data>
 ```
 
+</div>
+
+<div id="add-users-to-group" markdown="1">
+
 #### 8) Add users to a group
 
 ###### Request format:
@@ -614,6 +644,10 @@ POST /groups/25/users
   "ids": [12, 13]
 }
 ```
+
+</div>
+
+<div id="add-vehicles-to-group" markdown="1">
 
 #### 9) Add vehicles to a group
 
@@ -658,6 +692,10 @@ POST /groups/25/vehicles
 }
 ```
 
+</div>
+
+<div id="delete-users-from-group" markdown="1">
+
 #### 10) Delete users from a group
 
 ###### Request format:
@@ -701,6 +739,10 @@ DELETE /groups/25/users
 }
 ```
 
+</div>
+
+<div id="delete-vehicles-from-group" markdown="1">
+
 #### 11) Delete vehicles from a group
 
 ###### Request format:
@@ -743,3 +785,7 @@ DELETE /groups/25/vehicles
   "ids": [12, 13]
 }
 ```
+
+</div>
+
+<div id="list-company-users" markdown="1">
