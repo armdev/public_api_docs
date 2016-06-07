@@ -6,7 +6,7 @@ categories: endpoint
 tags: hos-violations
 ---
 
-#### 1) List of hos violations for a company’s users
+#### 1) List of hos violations for a company's users
 
 ###### Request format:
 

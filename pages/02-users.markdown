@@ -29,7 +29,7 @@ GET /users?role=<driver|admin|fleet_user>&name=<s>&duty_status=<off_duty|on_duty
 ###### Example Requests:
 
 ```
-GET /users?role=”driver”&name=”John%20Smith”&duty_status=”driving”&per_page=”100”&page_no=”1”
+GET /users?role="driver"&name="John%20Smith"&duty_status="driving"&per_page="100"&page_no="1"
 curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/users?role=driver&name=John%20Smith&duty_status=driving&per_page=100&page_no=1"
 ```
 
@@ -320,8 +320,8 @@ PUT /users/:id
 ###### Request parameters:
 
 + id (required &#124; integer): id of the user to update
-+ admin/fleet_user’s params ->  :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone
-+ Driver’s params -> :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone, :cycle, :driver_company_id, :carrier_name, :carrier_street, :carrier_city, :carrier_state, :carrier_zip,:violation_alerts, :terminal_street, :terminal_city, :terminal_state, :terminal_zip, :exception_24_hour_restart,:exception_8_hour_break, :exception_wait_time, :export_combined, :export_recap, :export_odometers, :metric_units, :username,:unconfirmed_email, :minute_logs, :eld_mode, :drivers_license_number, :drivers_license_state, :yard_moves_enabled,:personal_conveyance_enabled
++ admin/fleet_user's params ->  :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone
++ Driver's params -> :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone, :cycle, :driver_company_id, :carrier_name, :carrier_street, :carrier_city, :carrier_state, :carrier_zip,:violation_alerts, :terminal_street, :terminal_city, :terminal_state, :terminal_zip, :exception_24_hour_restart,:exception_8_hour_break, :exception_wait_time, :export_combined, :export_recap, :export_odometers, :metric_units, :username,:unconfirmed_email, :minute_logs, :eld_mode, :drivers_license_number, :drivers_license_state, :yard_moves_enabled,:personal_conveyance_enabled
 
 ###### Example Request:
 

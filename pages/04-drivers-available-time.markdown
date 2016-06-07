@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Driver’s Available Time"
+title:  "Driver's Available Time"
 date:   2016-05-24 12:05:00 +0500
 categories: endpoint
 tags: drivers-available-time
@@ -28,7 +28,7 @@ GET /available_time?driver_ids[]=<i>
 
 ###### Response Body:
 
-List of matching users with details of driver’s remaining duty time in SECONDS
+List of matching users with details of driver's remaining duty time in SECONDS
 
 ###### Example Request:
 
