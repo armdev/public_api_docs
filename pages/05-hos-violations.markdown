@@ -36,7 +36,7 @@ List of matching hos_violations
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/hos_violations?min_start_time=2016-03-01"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/hos_violations?min_start_time=2016-03-01"
 ```
 
 ###### Sample JSON Request:

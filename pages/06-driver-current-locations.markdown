@@ -33,7 +33,7 @@ List of matching users with details of current locations
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/driver_locations"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/driver_locations"
 ```
 
 ###### Sample JSON Request:

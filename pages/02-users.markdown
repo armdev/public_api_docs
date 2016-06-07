@@ -30,7 +30,7 @@ GET /users?role=<driver|admin|fleet_user>&name=<s>&duty_status=<off_duty|on_duty
 
 ```
 GET /users?role="driver"&name="John%20Smith"&duty_status="driving"&per_page="100"&page_no="1"
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/users?role=driver&name=John%20Smith&duty_status=driving&per_page=100&page_no=1"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/users?role=driver&name=John%20Smith&duty_status=driving&per_page=100&page_no=1"
 ```
 
 ###### Response Status:
@@ -191,7 +191,7 @@ Returns user object based on user id.
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/users/158"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/users/158"
 ```
 
 ###### Sample JSON Request:
@@ -276,7 +276,7 @@ POST /users
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" -d "password=12345678&email=foo@keeptruckin.com&first_name=Foo&last_name=Bar&role=driver" "https://api.keeptruckin.com/v1/users"
+curl -H "X-Api-Key: 12345" -d "password=12345678&email=foo@keeptruckin.com&first_name=Foo&last_name=Bar&role=driver" "https://api.keeptruckin.com/v1/users"
 ```
 
 ###### Response Body:
@@ -326,7 +326,7 @@ PUT /users/:id
 ###### Example Request:
 
 ```
-curl -X PUT -H "X-API-KEY: 12345" -d "password=12345678&email=foo@keeptruckin.com&first_name=Foo&last_name=Bar&role=driver" "https://api.keeptruckin.com/v1/users/104"
+curl -X PUT -H "X-Api-Key: 12345" -d "password=12345678&email=foo@keeptruckin.com&first_name=Foo&last_name=Bar&role=driver" "https://api.keeptruckin.com/v1/users/104"
 ```
 
 ###### Response Status:

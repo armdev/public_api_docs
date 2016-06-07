@@ -33,7 +33,7 @@ Return a list of groups.
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/groups"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/groups"
 ```
 
 ###### Sample JSON Request:
@@ -148,7 +148,7 @@ Returns group object.
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/groups"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/groups"
 ```
 
 ###### Sample JSON Request:
@@ -246,7 +246,7 @@ POST /groups
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" -d "name=foo" "https://api.keeptruckin.com/v1/groups"
+curl -H "X-Api-Key: 12345" -d "name=foo" "https://api.keeptruckin.com/v1/groups"
 ```
 
 ###### Sample Response:
@@ -296,7 +296,7 @@ PUT /groups/1
 ###### Example Request:
 
 ```
-curl -X PUT -H "X-API-KEY: 12345" -d "name=foo" "https://api.keeptruckin.com/v1/groups/4"
+curl -X PUT -H "X-Api-Key: 12345" -d "name=foo" "https://api.keeptruckin.com/v1/groups/4"
 ```
 
 ###### Sample Response:
@@ -328,7 +328,7 @@ DELETE /groups/:id
 ###### Example Request:
 
 ```
-curl -X DELETE -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/groups/4"
+curl -X DELETE -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/groups/4"
 ```
 
 ###### Response Body:
@@ -372,7 +372,7 @@ Returns users in a group.
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/groups/4/users"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/groups/4/users"
 ```
 
 ###### Sample JSON Request:
@@ -506,7 +506,7 @@ Returns drivers in a group.
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/groups/4/vehicles"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/groups/4/vehicles"
 ```
 
 ###### Sample JSON Request:
@@ -624,7 +624,7 @@ POST /groups/:id/users
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" -d "ids[]=66&ids[]=156" "https://api.keeptruckin.com/v1/groups/8/users"
+curl -H "X-Api-Key: 12345" -d "ids[]=66&ids[]=156" "https://api.keeptruckin.com/v1/groups/8/users"
 ```
 
 ###### Response Body:
@@ -675,7 +675,7 @@ Success response.
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" -d "ids[]=66&ids[]=156" "https://api.keeptruckin.com/v1/groups/8/vehicles"
+curl -H "X-Api-Key: 12345" -d "ids[]=66&ids[]=156" "https://api.keeptruckin.com/v1/groups/8/vehicles"
 ```
 
 ###### Sample Request:
@@ -722,7 +722,7 @@ Success response.
 ###### Example Request:
 
 ```
-curl -X DELETE -H "X-API-KEY: 12345" -d "ids[]=156" "https://api.keeptruckin.com/v1/groups/8/users"
+curl -X DELETE -H "X-Api-Key: 12345" -d "ids[]=156" "https://api.keeptruckin.com/v1/groups/8/users"
 ```
 
 ###### Sample Request:
@@ -769,7 +769,7 @@ Success response.
 ###### Example Request:
 
 ```
-curl -X DELETE -H "X-API-KEY: 12345" -d "ids[]=156" "https://api.keeptruckin.com/v1/groups/8/vehicles"
+curl -X DELETE -H "X-Api-Key: 12345" -d "ids[]=156" "https://api.keeptruckin.com/v1/groups/8/vehicles"
 ```
 
 ###### Sample Request:

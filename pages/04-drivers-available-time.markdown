@@ -33,7 +33,7 @@ List of matching users with details of driver's remaining duty time in SECONDS
 ###### Example Request:
 
 ```
-curl -H "X-API-KEY: 12345" "https://api.keeptruckin.com/v1/available_time"
+curl -H "X-Api-Key: 12345" "https://api.keeptruckin.com/v1/available_time"
 ```
 
 ###### Sample JSON Request:

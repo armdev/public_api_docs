@@ -35,7 +35,7 @@ HTTP_X_USER_ID(optional) default: admin. messages/emails will be sent on behalf 
 ###### Example Request:
 
 ```
-curl -X POST -H "X-API-KEY: 12345" -d "recipient_id=1&body=hello, this is a test /'message/'" "https://api.keeptruckin.com/v1/messages"
+curl -X POST -H "X-Api-Key: 12345" -d "recipient_id=1&body=hello, this is a test /'message/'" "https://api.keeptruckin.com/v1/messages"
 ```
 
 ###### Sample Request:
