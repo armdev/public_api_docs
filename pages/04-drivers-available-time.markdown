@@ -53,6 +53,7 @@ GET /v1/available_time
         "first_name": "Alexandrea",
         "last_name": "Koch",
         "driver_company_id": 75,
+        "duty_status": "off_duty",
         "available_time": {
           "drive": 39600,
           "shift": 50400,
@@ -67,6 +68,7 @@ GET /v1/available_time
         "first_name": "Anahi",
         "last_name": "Flatley",
         "driver_company_id": 75,
+        "duty_status": "on_duty",
         "available_time": {
           "drive": 39600,
           "shift": 50400,
@@ -81,6 +83,7 @@ GET /v1/available_time
         "first_name": "Golden",
         "last_name": "Cummings",
         "driver_company_id": 75,
+        "duty_status": "driving",
         "available_time": {
           "drive": 39600,
           "shift": 50400,
@@ -115,6 +118,7 @@ GET /v1/available_time.xml
             <first_name>Alexandrea</first_name>
             <last_name>Koch</last_name>
             <driver_company_id>75</driver_company_id>
+            <duty_status>off_duty</duty_status>
             <available_time>
                 <drive>39600</drive>
                 <shift>50400</shift>
@@ -127,6 +131,7 @@ GET /v1/available_time.xml
             <first_name>Anahi</first_name>
             <last_name>Flatley</last_name>
             <driver_company_id>75</driver_company_id>
+            <duty_status>on_duty</duty_status>
             <available_time>
                 <drive>39600</drive>
                 <shift>50400</shift>
@@ -139,6 +144,7 @@ GET /v1/available_time.xml
             <first_name>Golden</first_name>
             <last_name>Cummings</last_name>
             <driver_company_id>75</driver_company_id>
+            <duty_status>driving</duty_status>
             <available_time>
                 <drive>39600</drive>
                 <shift>50400</shift>
