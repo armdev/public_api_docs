@@ -90,6 +90,7 @@ GET /users.json
         "drivers_license_state": null,
         "yard_moves_enabled": false,
         "personal_conveyance_enabled": false,
+        "duty_status": "off_duty",
         "created_at": "2016-02-24T06:26:00Z",
         "updated_at": "2016-02-24T06:26:00.000000Z"
       }
@@ -152,6 +153,7 @@ GET /users.xml
       <drivers_license_state nil="true"/>
       <yard_moves_enabled>false</yard_moves_enabled>
       <personal_conveyance_enabled>false</personal_conveyance_enabled>
+      <duty_status>off_duty</duty_status>
       <created_at>2016-02-24T06:26:00Z</created_at>
       <updated_at>2016-02-24T06:26:00.000000Z</updated_at>
     </user>
@@ -215,6 +217,7 @@ GET /users/158
     "time_zone": "Mountain Time (US & Canada)",
     "role": "fleet_user",
     "status": "active",
+    "duty_status": "off_duty",
     "created_at": "2016-03-16T08:22:44Z",
     "updated_at": "2016-03-16T08:22:44.226952Z"
   }
@@ -242,6 +245,7 @@ GET /users/158.xml
     <time_zone>Mountain Time (US &amp; Canada)</time_zone>
     <role>fleet_user</role>
     <status>active</status>
+    <duty_status>off_duty</duty_status>
     <created_at>2016-03-16T08:22:44Z</created_at>
     <updated_at>2016-03-16T08:22:44.226952Z</updated_at>
 </data>
