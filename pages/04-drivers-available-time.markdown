@@ -59,6 +59,37 @@ GET /v1/available_time
           "shift": 50400,
           "cycle": 252000,
           "break": 28800
+        },
+        "recap": {
+          "on_duty_duration": [
+            {
+              "date": "2016-07-18",
+              "duration": 1200.0
+            },
+            {
+              "date": "2016-07-17",
+              "duration": 600.0
+            }
+          ],
+          "driving_duration": [
+            {
+              "date": "2016-07-18",
+              "duration": 1200.0
+            },
+            {
+              "date": "2016-07-17",
+              "duration": 600.0
+            }
+          ]
+        },
+        "last_hos_status": {
+          "status": "on_duty",
+          "time": "2016-07-18T07:40:00Z"
+        },
+        "last_cycle_reset": {
+          "type": "34_hour",
+          "start_time": "2016-07-16T22:00:00Z",
+          "end_time": "2016-07-18T08:00:00Z"
         }
       }
     },
@@ -74,7 +105,16 @@ GET /v1/available_time
           "shift": 50400,
           "cycle": 252000,
           "break": 28800
-        }
+        },
+        "recap": {
+          "on_duty_duration": [],
+          "driving_duration": []
+        },
+        "last_hos_status": {
+          "status": "on_duty",
+          "time": "2016-07-18T07:40:00Z"
+        },
+        "last_cycle_reset": null
       }
     },
     {
@@ -89,7 +129,16 @@ GET /v1/available_time
           "shift": 50400,
           "cycle": 252000,
           "break": 28800
-        }
+        },
+        "recap": {
+          "on_duty_duration": [],
+          "driving_duration": []
+        },
+        "last_hos_status": {
+          "status": "on_duty",
+          "time": "2016-07-18T07:40:00Z"
+        },
+        "last_cycle_reset": null
       }
     }
   ],
@@ -125,6 +174,37 @@ GET /v1/available_time.xml
                 <cycle>252000</cycle>
                 <break>28800</break>
             </available_time>
+            <recap>
+                <on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-18</date>
+                        <duration>1200.0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-17</date>
+                        <duration>600.0</duration>
+                    </on_duty_duration>
+                </on_duty_duration>
+                <driving_duration>
+                    <driving_duration>
+                        <date>2016-07-18</date>
+                        <duration>1200.0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-17</date>
+                        <duration>600.0</duration>
+                    </driving_duration>
+                </driving_duration>
+            </recap>
+            <last_hos_status>
+                <status>on_duty</status>
+                <time>2016-07-18T07:40:00Z</time>
+            </last_hos_status>
+            <last_cycle_reset>
+                <type>34_hour</type>
+                <start_time>2016-07-16T22:00:00Z</start_time>
+                <end_time>2016-07-18T08:00:00Z</end_time>
+            </last_cycle_reset>
         </user>
         <user>
             <id>159</id>
@@ -138,6 +218,15 @@ GET /v1/available_time.xml
                 <cycle>252000</cycle>
                 <break>28800</break>
             </available_time>
+            <recap>
+                <on_duty_duration/>
+                <driving_duration/>
+            </recap>
+            <last_hos_status>
+                <status>on_duty</status>
+                <time>2016-07-18T07:40:00Z</time>
+            </last_hos_status>
+            <last_cycle_reset nil="true"/>
         </user>
         <user>
             <id>160</id>
@@ -151,6 +240,15 @@ GET /v1/available_time.xml
                 <cycle>252000</cycle>
                 <break>28800</break>
             </available_time>
+            <recap>
+                <on_duty_duration/>
+                <driving_duration/>
+            </recap>
+            <last_hos_status>
+                <status>on_duty</status>
+                <time>2016-07-18T07:40:00Z</time>
+            </last_hos_status>
+            <last_cycle_reset nil="true"/>
         </user>
     </users>
     <pagination>
