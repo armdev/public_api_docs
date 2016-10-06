@@ -78,6 +78,7 @@ GET /users.json
         "exception_8_hour_break": false,
         "exception_wait_time": false,
         "exception_short_haul": false,
+        "exception_ca_farm_school_bus": false,
         "export_combined": true,
         "export_recap": true,
         "export_odometers": true,
@@ -142,6 +143,7 @@ GET /users.xml
       <exception_8_hour_break>false</exception_8_hour_break>
       <exception_wait_time>false</exception_wait_time>
       <exception_short_haul>false</exception_short_haul>
+      <exception_ca_farm_school_bus>false</exception_ca_farm_school_bus>
       <export_combined>true</export_combined>
       <export_recap>true</export_recap>
       <export_odometers>true</export_odometers>
@@ -327,7 +329,7 @@ PUT /users/:id
 
 + id (required &#124; integer): id of the user to update
 + admin/fleet_user's params ->  :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone
-+ Driver's params -> :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone, :cycle, :driver_company_id, :carrier_name, :carrier_street, :carrier_city, :carrier_state, :carrier_zip,:violation_alerts, :terminal_street, :terminal_city, :terminal_state, :terminal_zip, :exception_24_hour_restart,:exception_8_hour_break, :exception_wait_time, :exception_short_haul, :export_combined, :export_recap, :export_odometers, :metric_units, :username,:unconfirmed_email, :minute_logs, :eld_mode, :drivers_license_number, :drivers_license_state, :yard_moves_enabled,:personal_conveyance_enabled
++ Driver's params -> :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone, :cycle, :driver_company_id, :carrier_name, :carrier_street, :carrier_city, :carrier_state, :carrier_zip,:violation_alerts, :terminal_street, :terminal_city, :terminal_state, :terminal_zip, :exception_24_hour_restart,:exception_8_hour_break, :exception_wait_time, :exception_short_haul, :exception_ca_farm_school_bus, :export_combined, :export_recap, :export_odometers, :metric_units, :username, :minute_logs, :eld_mode, :drivers_license_number, :drivers_license_state, :yard_moves_enabled, :personal_conveyance_enabled
 
 ###### Example Request:
 
