@@ -59,7 +59,9 @@ GET /v1/vehicle_locations
           "lat": 47.565647,
           "lon": -122.276261,
           "description": "Seattle, WA",
-          "located_at": "2016-03-17T12:12:07Z"
+          "located_at": "2016-03-17T12:12:07Z",
+          "bearing": 90.0,
+          "speed": 65.1
          },
         "current_driver": {
           "id": 104,
@@ -107,6 +109,8 @@ GET /v1/vehicle_locations.xml
                 <lon>-122.276261</lon>
                 <description>Seattle, WA</description>
                 <located_at>2016-03-17T12:12:07Z</located_at>
+                <bearing>90.0</bearing>
+                <speed>65.1</speed>
             </current_location>
             <current_driver>
                 <id>104</id>
@@ -180,7 +184,7 @@ GET /v1/vehicle_locations/53
         "bearing": 1.24,
         "engine_hours": 234.22,
         "description": "6.2 mi N of San Francisco, CA",
-        "speed": 50.0203655,
+        "speed": 50.1,
         "odometer": 7.58693991,
         "fuel": 2.96665156
       },
@@ -191,7 +195,7 @@ GET /v1/vehicle_locations/53
         "bearing": 2.24,
         "engine_hours": 244.22,
         "description": "6.2 mi N of San Francisco, CA",
-        "speed": 40.0203234,
+        "speed": 40.4,
         "odometer": 5.58623553,
         "fuel": 1.34645126
       }
@@ -219,7 +223,7 @@ GET /v1/vehicle_locations.xml
             <bearing>1.24</bearing>
             <engine_hours>234.22</engine_hours>
             <description>6.2 mi N of San Francisco, CA</description>
-            <speed>50.0203655</speed>
+            <speed>50.1</speed>
             <odometer>7.58693991</odometer>
             <fuel> 2.96665156</fuel>
         </location_history>
@@ -230,7 +234,7 @@ GET /v1/vehicle_locations.xml
             <bearing>2.24</bearing>
             <engine_hours>244.22</engine_hours>
             <description>6.2 mi N of San Francisco, CA</description>
-            <speed>40.0203234</speed>
+            <speed>40.4</speed>
             <odometer>5.58623553</odometer>
             <fuel> 1.34645126</fuel>
         </location_history>
