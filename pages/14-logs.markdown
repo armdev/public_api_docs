@@ -130,7 +130,7 @@ GET /logs.json?per_page=100&page_no=1
             }
           }
         ],
-        "shipping_doc": "123ABC",
+        "shipping_docs": "123ABC",
         "form_and_manner_errors": [],
         "hos_violations": [
           {
@@ -272,7 +272,7 @@ GET /logs.xml?per_page=100&page_no=1
                     <name>34 Hour</name>
                 </cycle_restart>
             </cycle_restarts>
-            <shipping_doc>123ABC</shipping_doc>
+            <shipping_docs>123ABC</shipping_docs>
             <form_and_manner_errors/>
             <hos_violations>
                 <hos_violation>
