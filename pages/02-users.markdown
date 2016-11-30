@@ -272,6 +272,8 @@ POST /users
 + password (**required** &#124; string): password of user
 + first_name (**required** &#124; string): first_name of user
 + last_name (**required** &#124; string): last_name of user
++ email (**required** &#124; string): email address of user (only email address OR username is required but both can be set)
++ username (**required** &#124; string): username of user (only email address OR username is required but both can be set)
 + role (optional &#124; string): role of user. valid values are ('driver', 'fleet_user', 'admin')
 
 ###### Response Status:
