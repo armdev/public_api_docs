@@ -86,6 +86,11 @@ GET /logs.json?per_page=100&page_no=1
         "odometers": {},
         "trailer_numbers": "17",
         "vehicle_numbers": "12345, 12",
+        "off_duty_duration": 43200,
+        "on_duty_duration": 7200,
+        "sleeper_duration": 0,
+        "driving_duration": 21600,
+        "waiting_duration": 0,
         "driver": {
           "id": 11,
           "first_name": "Demo",
@@ -231,9 +236,14 @@ GET /logs.xml?per_page=100&page_no=1
             <eld_mode>logs</eld_mode>
             <co_driver_full_names/>
             <odometers>
-      </odometers>
+            </odometers>
             <trailer_numbers>17</trailer_numbers>
             <vehicle_numbers>12345, 12</vehicle_numbers>
+            <off_duty_duration>43200</off_duty_duration>
+            <on_duty_duration>7200</on_duty_duration>
+            <sleeper_duration>0</sleeper_duration>
+            <driving_duration>21600</driving_duration>
+            <waiting_duration>0</waiting_duration>
             <driver>
                 <id>11</id>
                 <first_name>Demo</first_name>
