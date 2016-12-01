@@ -69,6 +69,26 @@ GET /v1/available_time
             {
               "date": "2016-07-17",
               "duration": 600.0
+            },
+            {
+              "date": "2016-07-16",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-15",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-14",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-13",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-12",
+              "duration": 0
             }
           ],
           "driving_duration": [
@@ -79,6 +99,26 @@ GET /v1/available_time
             {
               "date": "2016-07-17",
               "duration": 600.0
+            },
+            {
+              "date": "2016-07-16",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-15",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-14",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-13",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-12",
+              "duration": 0
             }
           ]
         },
@@ -107,32 +147,66 @@ GET /v1/available_time
           "break": 28800
         },
         "recap": {
-          "on_duty_duration": [],
-          "driving_duration": []
-        },
-        "last_hos_status": {
-          "status": "on_duty",
-          "time": "2016-07-18T07:40:00Z"
-        },
-        "last_cycle_reset": null
-      }
-    },
-    {
-      "user": {
-        "id": 160,
-        "first_name": "Golden",
-        "last_name": "Cummings",
-        "driver_company_id": 75,
-        "duty_status": "driving",
-        "available_time": {
-          "drive": 39600,
-          "shift": 50400,
-          "cycle": 252000,
-          "break": 28800
-        },
-        "recap": {
-          "on_duty_duration": [],
-          "driving_duration": []
+          "on_duty_duration": [
+            {
+              "date": "2016-07-18",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-17",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-16",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-15",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-14",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-13",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-12",
+              "duration": 0
+            }
+          ],
+          "driving_duration": [
+            {
+              "date": "2016-07-18",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-17",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-16",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-15",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-14",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-13",
+              "duration": 0
+            },
+            {
+              "date": "2016-07-12",
+              "duration": 0
+            }
+          ]
         },
         "last_hos_status": {
           "status": "on_duty",
@@ -145,7 +219,7 @@ GET /v1/available_time
   "pagination": {
     "per_page": 25,
     "page_no": 1,
-    "total": 3
+    "total": 2
   }
 }
 ```
@@ -184,6 +258,26 @@ GET /v1/available_time.xml
                         <date>2016-07-17</date>
                         <duration>600.0</duration>
                     </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-16</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-15</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-14</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-13</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-12</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
                 </on_duty_duration>
                 <driving_duration>
                     <driving_duration>
@@ -193,6 +287,26 @@ GET /v1/available_time.xml
                     <driving_duration>
                         <date>2016-07-17</date>
                         <duration>600.0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-16</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-15</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-14</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-13</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-12</date>
+                        <duration>0</duration>
                     </driving_duration>
                 </driving_duration>
             </recap>
@@ -219,30 +333,66 @@ GET /v1/available_time.xml
                 <break>28800</break>
             </available_time>
             <recap>
-                <on_duty_duration/>
-                <driving_duration/>
-            </recap>
-            <last_hos_status>
-                <status>on_duty</status>
-                <time>2016-07-18T07:40:00Z</time>
-            </last_hos_status>
-            <last_cycle_reset nil="true"/>
-        </user>
-        <user>
-            <id>160</id>
-            <first_name>Golden</first_name>
-            <last_name>Cummings</last_name>
-            <driver_company_id>75</driver_company_id>
-            <duty_status>driving</duty_status>
-            <available_time>
-                <drive>39600</drive>
-                <shift>50400</shift>
-                <cycle>252000</cycle>
-                <break>28800</break>
-            </available_time>
-            <recap>
-                <on_duty_duration/>
-                <driving_duration/>
+                <on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-18</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-17</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-16</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-15</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-14</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-13</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                    <on_duty_duration>
+                        <date>2016-07-12</date>
+                        <duration>0</duration>
+                    </on_duty_duration>
+                </on_duty_duration>
+                <driving_duration>
+                    <driving_duration>
+                        <date>2016-07-18</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-17</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-16</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-15</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-14</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-13</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                    <driving_duration>
+                        <date>2016-07-12</date>
+                        <duration>0</duration>
+                    </driving_duration>
+                </driving_duration>
             </recap>
             <last_hos_status>
                 <status>on_duty</status>
@@ -254,7 +404,7 @@ GET /v1/available_time.xml
     <pagination>
         <per_page>25</per_page>
         <page_no>1</page_no>
-        <total>3</total>
+        <total>2</total>
     </pagination>
 </data>
 ```
