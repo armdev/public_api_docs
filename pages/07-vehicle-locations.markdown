@@ -61,6 +61,7 @@ GET /v1/vehicle_locations
           "description": "Seattle, WA",
           "located_at": "2016-03-17T12:12:07Z",
           "bearing": 90.0,
+          "type": "vehicle_moving",
           "speed": 65.1
          },
         "current_driver": {
@@ -110,6 +111,7 @@ GET /v1/vehicle_locations.xml
                 <description>Seattle, WA</description>
                 <located_at>2016-03-17T12:12:07Z</located_at>
                 <bearing>90.0</bearing>
+                <type>vehicle_moving</type>
                 <speed>65.1</speed>
             </current_location>
             <current_driver>
@@ -183,6 +185,7 @@ GET /v1/vehicle_locations/53
         "lon": 456.0,
         "bearing": 1.24,
         "engine_hours": 234.22,
+        "type": "vehicle_moving",
         "description": "6.2 mi N of San Francisco, CA",
         "speed": 50.1,
         "odometer": 7.58693991,
@@ -194,6 +197,7 @@ GET /v1/vehicle_locations/53
         "lon": 456.0,
         "bearing": 2.24,
         "engine_hours": 244.22,
+        "type": "breadcrumb",
         "description": "6.2 mi N of San Francisco, CA",
         "speed": 40.4,
         "odometer": 5.58623553,
@@ -222,6 +226,7 @@ GET /v1/vehicle_locations.xml
             <lan>456.0</lon>
             <bearing>1.24</bearing>
             <engine_hours>234.22</engine_hours>
+            <type>vehicle_moving</type>
             <description>6.2 mi N of San Francisco, CA</description>
             <speed>50.1</speed>
             <odometer>7.58693991</odometer>
@@ -233,6 +238,7 @@ GET /v1/vehicle_locations.xml
             <lan>456.0</lon>
             <bearing>2.24</bearing>
             <engine_hours>244.22</engine_hours>
+            <type>breadcrumb</type>
             <description>6.2 mi N of San Francisco, CA</description>
             <speed>40.4</speed>
             <odometer>5.58623553</odometer>
