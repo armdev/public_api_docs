@@ -156,6 +156,7 @@ GET /vehicle_locations/<id>
 + 200
 + 400
 + 403 - Forbidden
++ 404 - vehicle not found
 
 ###### Response Body:
 
