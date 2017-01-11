@@ -68,6 +68,10 @@ GET /ifta/trips.json
         },
         "start_odometer": 0.6835081,
         "end_odometer": 1.3670162,
+        "start_lat": 2.0,
+        "start_lon": 3.0,
+        "end_lat": 4.0,
+        "end_lon": 5.0,
         "distance": 0.6835081,
         "time_zone": "Pacific Time (US & Canada)"
       }
@@ -88,6 +92,10 @@ GET /ifta/trips.json
         },
         "start_odometer": 2613.59205907,
         "end_odometer": 2719.80921781,
+        "start_lat": 2.0,
+        "start_lon": 3.0,
+        "end_lat": 4.0,
+        "end_lon": 5.0,
         "distance": 104.676158659999,
         "time_zone": "Pacific Time (US & Canada)"
       }
@@ -128,6 +136,10 @@ GET /ifta/trips.xml
             </vehicle>
             <start_odometer>0.6835081000000001</start_odometer>
             <end_odometer>1.3670162000000001</end_odometer>
+            <start_lat>2.0</start_lat>
+            <start_lon>3.0</start_lon>
+            <end_lat>4.0</end_lat>
+            <end_lon>5.0</end_lon>
             <distance>0.6835081000000001</distance>
             <time_zone>Pacific Time (US &amp; Canada)</time_zone>
         </ifta_trip>
@@ -146,6 +158,10 @@ GET /ifta/trips.xml
             </vehicle>
             <start_odometer>2613.5920590700002</start_odometer>
             <end_odometer>2719.8092178099996</end_odometer>
+            <start_lat>2.0</start_lat>
+            <start_lon>3.0</start_lon>
+            <end_lat>4.0</end_lat>
+            <end_lon>5.0</end_lon>
             <distance>104.67615865999939</distance>
             <time_zone>Pacific Time (US &amp; Canada)</time_zone>
         </ifta_trip>
