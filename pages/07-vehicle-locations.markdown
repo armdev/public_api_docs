@@ -56,6 +56,7 @@ GET /v1/vehicle_locations
         "model": null,
         "vin": null,
         "current_location": {
+          "id": "af5b6e0d-c442-414c-88d2-d95e5cb7affe",
           "lat": 47.565647,
           "lon": -122.276261,
           "description": "Seattle, WA",
@@ -105,7 +106,7 @@ GET /v1/vehicle_locations.xml
             <model nil="true"/>
             <vin nil="true"/>
             <current_location>
-                <id>205783</id>
+                <id>af5b6e0d-c442-414c-88d2-d95e5cb7affe</id>
                 <lat>47.565647</lat>
                 <lon>-122.276261</lon>
                 <description>Seattle, WA</description>
@@ -181,6 +182,7 @@ GET /v1/vehicle_locations/53
   "location_histories": [
     {
       "location_history": {
+        "id": "af5b6e0d-c442-414c-88d2-d95e5cb7affe",
         "located_at": "2016-05-24T06:01:11Z",
         "lat": 123.0,
         "lon": 456.0,
@@ -193,6 +195,7 @@ GET /v1/vehicle_locations/53
         "fuel": 2.96665156
       },
       "location_history": {
+        "id": "d1671b6d-d2ba-49f4-b8c3-8d0782a50d44",
         "located_at": "2016-05-24T09:01:11Z",
         "lat": 123.0,
         "lon": 456.0,
@@ -222,6 +225,7 @@ GET /v1/vehicle_locations.xml
 <data>
     <location_histories>
         <location_history>
+            <id>af5b6e0d-c442-414c-88d2-d95e5cb7affe</id>
             <located_at>2016-05-24T06:01:11Z</located_at>
             <loc>123.0</loc>
             <lan>456.0</lon>
@@ -234,6 +238,7 @@ GET /v1/vehicle_locations.xml
             <fuel> 2.96665156</fuel>
         </location_history>
         <location_history>
+            <id>d1671b6d-d2ba-49f4-b8c3-8d0782a50d44</id>
             <located_at>2016-05-24T09:01:11Z</located_at>
             <loc>123.0</loc>
             <lan>456.0</lon>
