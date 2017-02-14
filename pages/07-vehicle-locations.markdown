@@ -63,7 +63,10 @@ GET /v1/vehicle_locations
           "located_at": "2016-03-17T12:12:07Z",
           "bearing": 90.0,
           "type": "vehicle_moving",
-          "speed": 65.1
+          "speed": 65.1,
+          "engine_hours": 123.56,
+          "fuel": 121.33,
+          "odometer": 456.22
          },
         "current_driver": {
           "id": 104,
@@ -114,6 +117,9 @@ GET /v1/vehicle_locations.xml
                 <bearing>90.0</bearing>
                 <type>vehicle_moving</type>
                 <speed>65.1</speed>
+                <engine_hours>123.56</engine_hours>
+                <fuel>121.33</fuel>
+                <odometer>456.22</odometer>
             </current_location>
             <current_driver>
                 <id>104</id>
