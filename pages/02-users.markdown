@@ -275,6 +275,7 @@ POST /users
 + email (**required** &#124; string): email address of user (only email address OR username is required but both can be set)
 + username (**required** &#124; string): username of user (only email address OR username is required but both can be set)
 + role (optional &#124; string): role of user. valid values are ('driver', 'fleet_user', 'admin')
++ driver_company_id (optional &#124; string): drivers only - fleet-specific driver ID (set this to whatever ID you use to internally identify a driver)
 
 ###### Response Status:
 
