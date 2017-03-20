@@ -64,6 +64,7 @@ GET /vehicles.json?fuel_type=diesel&per_page=100&page_no=1
         "license_plate_number": "5M37250",
         "metric_units": false,
         "fuel_type": "diesel",
+        "prevent_auto_odometer_entry": true,
         "eld_device": {
           "id": 2,
           "identifier": "000074802542164638439715893965",
@@ -116,6 +117,7 @@ GET /vehicles.xml?fuel_type=diesel&per_page=100&page_no=1
             <license_plate_number>5M37250</license_plate_number>
             <metric_units>false</metric_units>
             <fuel_type>diesel</fuel_type>
+            <prevent_auto_odometer_entry>true</prevent_auto_odometer_entry>
             <eld_device>
                 <id>2</id>
                 <identifier>000074802542164638439715893965</identifier>
@@ -195,6 +197,7 @@ GET /vehicles/4
     "license_plate_number": "5M37250",
     "metric_units": false,
     "fuel_type": "diesel",
+    "prevent_auto_odometer_entry": true,
     "eld_device": {
       "id": 2,
       "identifier": "000074802542164638439715893965",
@@ -238,6 +241,7 @@ GET /vehicles/4.xml
     <license_plate_number>5M37250</license_plate_number>
     <metric_units>false</metric_units>
     <fuel_type>diesel</fuel_type>
+    <prevent_auto_odometer_entry>true</prevent_auto_odometer_entry>
     <eld_device>
         <id>2</id>
         <identifier>000074802542164638439715893965</identifier>
@@ -274,6 +278,7 @@ POST /vehicles
 + eld_device_id (optional &#124; integer): id of the eld device to attach to the vehicle
 + ifta (optional &#124; boolean): true if vehicle is included in ifta calculations
 + metric_units (optional &#124; boolean): true if the vehicle uses metric units
++ prevent_auto_odometer_entry (optional &#124; boolean): true if vehicle's odometer reading should not be copied from ELD and added to driver's HOS log
 + fuel_type (optional &#124; string): valid values are ("diesel", "gasoline", "propane", "lng", "cng", "ethanol", "methanol", "e85", "m85", "a55", "biodiesel", "other")
 + vin (optional &#124; string)
 + license_plate_state (optional &#124; string)
@@ -335,6 +340,7 @@ PUT /vehicles/:id
 + id (**required** &#124; integer): id of the vehicle to update
 + ifta (optional &#124; boolean): true if vehicle is included in ifta calculations
 + metric_units (optional &#124; boolean): true if the vehicle uses metric units
++ prevent_auto_odometer_entry (optional &#124; boolean): true if vehicle's odometer reading should not be copied from ELD and added to driver's HOS log
 + status (optional &#124; string): status of vehicle. valid values are ("active", "deactivated")
 + fuel_type (optional &#124; string): valid values are ("diesel", "gasoline", "propane", "lng", "cng", "ethanol", "methanol", "e85", "m85", "a55", "biodiesel", "other")
 + vin (optional &#124; string)
