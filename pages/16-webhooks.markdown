@@ -318,7 +318,7 @@ GET /company_webhooks/21
 
 ###### Request parameters:
 
-+ id (required &#124; integer) the webhook ID to return
++ id (**required** &#124; integer) the webhook ID to return
 
 ###### Example Requests:
 
@@ -396,7 +396,7 @@ POST /company_webhooks
 
 ###### Request parameters:
 
-+ url (required &#124; string) the URL for the webhook endpoint
++ url (**required** &#124; string) the URL for the webhook endpoint
 + secret (optional &#124; string) the shared secret (must be 20 characters and will be generated randomly if left blank)
 + format (optional &#124; string) the payload format for the webhook (only "json" is supported at this time)
 + actions (optional &#124; array of string): actions that will be supported by the webhook
@@ -476,7 +476,7 @@ PUT /company_webhooks/27
 
 ###### Request parameters:
 
-+ id (required &#124; integer) the webhook ID to update
++ id (**required** &#124; integer) the webhook ID to update
 + url (optional &#124; string) the URL for the webhook endpoint
 + secret (optional &#124; string) the shared secret (must be 20 characters and will be generated randomly if left blank)
 + format (optional &#124; string) the payload format for the webhook (only "json" is supported at this time)
@@ -557,7 +557,7 @@ DELETE /company_webhooks/27
 
 ###### Request parameters:
 
-+ id (required &#124; integer) the webhook ID to delete
++ id (**required** &#124; integer) the webhook ID to delete
 
 ###### Example Requests:
 
@@ -785,7 +785,7 @@ POST /company_webhook_requests/retry
 
 ###### Request parameters:
 
-+ ids (required &#124; array of integers) the webhook request IDs to retry
++ ids (**required** &#124; array of integers) the webhook request IDs to retry
 
 ###### Example Requests:
 

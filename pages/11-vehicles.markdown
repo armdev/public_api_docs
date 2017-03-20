@@ -332,7 +332,7 @@ PUT /vehicles/:id
 
 ###### Request parameters:
 
-+ id (required &#124; integer): id of the vehicle to update
++ id (**required** &#124; integer): id of the vehicle to update
 + ifta (optional &#124; boolean): true if vehicle is included in ifta calculations
 + metric_units (optional &#124; boolean): true if the vehicle uses metric units
 + status (optional &#124; string): status of vehicle. valid values are ("active", "deactivated")

@@ -274,8 +274,16 @@ POST /users
 + last_name (**required** &#124; string): last_name of user
 + email (**required** &#124; string): email address of user (only email address OR username is required but both can be set)
 + username (**required** &#124; string): username of user (only email address OR username is required but both can be set)
-+ role (optional &#124; string): role of user. valid values are ('driver', 'fleet_user', 'admin')
++ role (**required** &#124; string): role of user. valid values are ('driver', 'fleet_user', 'admin')
 + driver_company_id (optional &#124; string): drivers only - fleet-specific driver ID (set this to whatever ID you use to internally identify a driver)
++ yard_moves_enabled (optional &#124; boolean): true if yard moves are allowed for the driver
++ personal_conveyance_enabled (optional &#124; boolean): true if personal conveyance is allowed for the driver
++ group_ids (optional &#124; integer array): array of group_ids that a fleet user needs to be added to
++ group_visibility (optional &#124; string): group visibility of fleet user. valid values are ('all', 'limited')
+
+###### Notes:
+
+The group accessiblity parameters i.e. group_ids and group_visibility are only considered if role is 'fleet_user' otherwise they are ignored. If group_visibility is 'all' then group_ids should be blank otherwise error is returned. If group_visibility is 'limited' then group_ids should be present otherwise error is returned. If group_ids is present then group_visibility should be 'limited' otherwise error is returned.
 
 ###### Response Status:
 
@@ -330,9 +338,15 @@ PUT /users/:id
 
 ###### Request parameters:
 
-+ id (required &#124; integer): id of the user to update
++ id (**required** &#124; integer): id of the user to update
++ group_ids (optional &#124; integer array): array of group_ids that a fleet user needs to be added to
++ group_visibility (optional &#124; string): group visibility of fleet user. valid values are ('all', 'limited')
 + admin/fleet_user's params ->  :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone
-+ Driver's params -> :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone, :cycle, :driver_company_id, :carrier_name, :carrier_street, :carrier_city, :carrier_state, :carrier_zip,:violation_alerts, :terminal_street, :terminal_city, :terminal_state, :terminal_zip, :exception_24_hour_restart,:exception_8_hour_break, :exception_wait_time, :exception_short_haul, :exception_ca_farm_school_bus, :export_combined, :export_recap, :export_odometers, :metric_units, :username, :minute_logs, :eld_mode, :drivers_license_number, :drivers_license_state, :yard_moves_enabled, :personal_conveyance_enabled
++ Driver's params -> :email, :password, :first_name, :last_name, :dot_id, :phone, :phone_ext, :time_zone, :carrier_city, :carrier_name, :carrier_state, :carrier_street, :carrier_zip, :cycle, :cycle2, :driver_company_id, :drivers_license_number, :drivers_license_state, :eld_mode, :exception_24_hour_restart, :exception_24_hour_restart2, :exception_8_hour_break, :exception_8_hour_break2, :exception_ca_farm_school_bus, :exception_ca_farm_school_bus2, :exception_short_haul, :exception_short_haul2, :exception_wait_time, :exception_wait_time2, :export_combined, :export_odometers, :export_recap, :metric_units, :minute_logs, :personal_conveyance_enabled, :terminal_city, :terminal_state, :terminal_street, :terminal_zip, :unconfirmed_email, :username, :violation_alerts, :yard_moves_enabled
+
+###### Notes:
+
+The group accessiblity parameters i.e. group_ids and group_visibility are only considered if user's role is 'fleet_user' otherwise they are ignored. If group_visibility is 'all' then group_ids should be blank otherwise error is returned. If group_visibility is 'limited' then group_ids should be present otherwise error is returned. If group_ids is present then group_visibility should be 'limited' otherwise error is returned.
 
 ###### Example Request:
 
