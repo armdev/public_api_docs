@@ -172,7 +172,7 @@ Single day location histories of vehicle
 ###### Example Request:
 
 ```
-curl -H "X-Api-Key: 12345" -d "date=2016-05-24" "https://api.keeptruckin.com/v1/vehicle_locations/53"
+curl -H "X-Api-Key: 12345" -d "date=2017-02-14" "https://api.keeptruckin.com/v1/vehicle_locations/53"
 ```
 
 ###### Sample JSON Request:
@@ -185,33 +185,55 @@ GET /v1/vehicle_locations/53
 
 ```
 {
-  "location_histories": [
+  "vehicle_locations": [
     {
-      "location_history": {
-        "id": "af5b6e0d-c442-414c-88d2-d95e5cb7affe",
-        "located_at": "2016-05-24T06:01:11Z",
-        "lat": 123.0,
-        "lon": 456.0,
-        "bearing": 1.24,
-        "engine_hours": 234.22,
+      "vehicle_location": {
+        "id": "d261099e-dd3d-4847-bfa1-fb62800bdfb3",
+        "located_at": "2017-02-14T15:21:45Z",
+        "lat": 33.6667275,
+        "lon": 73.0131422,
+        "bearing": 98.88,
+        "engine_hours": 362.59728,
+        "type": "engine_start",
+        "description": "6.2 mi N of San Francisco, CA",
+        "speed": 0,
+        "odometer": 904.357366496655,
+        "fuel": 19.58731560404,
+        "driver": {
+          "id": 5,
+          "first_name": "John",
+          "last_name": "Doe",
+          "username": null,
+          "email": "f703a80782ea@keeptruckin.com",
+          "driver_company_id": null,
+          "status": "active",
+          "role": "driver"
+        }
+      }
+    },
+    {
+      "vehicle_location": {
+        "id": "fb11576e-d65a-49be-85d3-650d51911c90",
+        "located_at": "2017-02-14T15:21:46Z",
+        "lat": 33.6667275,
+        "lon": 73.0131422,
+        "bearing": 148.85,
+        "engine_hours": 362.59728,
         "type": "vehicle_moving",
         "description": "6.2 mi N of San Francisco, CA",
-        "speed": 50.1,
-        "odometer": 7.58693991,
-        "fuel": 2.96665156
-      },
-      "location_history": {
-        "id": "d1671b6d-d2ba-49f4-b8c3-8d0782a50d44",
-        "located_at": "2016-05-24T09:01:11Z",
-        "lat": 123.0,
-        "lon": 456.0,
-        "bearing": 2.24,
-        "engine_hours": 244.22,
-        "type": "breadcrumb",
-        "description": "6.2 mi N of San Francisco, CA",
-        "speed": 40.4,
-        "odometer": 5.58623553,
-        "fuel": 1.34645126
+        "speed": 5,
+        "odometer": 904.358488444132,
+        "fuel": 19.58731560404,
+        "driver": {
+          "id": 5,
+          "first_name": "John",
+          "last_name": "Doe",
+          "username": null,
+          "email": "f703a80782ea@keeptruckin.com",
+          "driver_company_id": null,
+          "status": "active",
+          "role": "driver"
+        }
       }
     }
   ]
@@ -229,34 +251,54 @@ GET /v1/vehicle_locations.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
-    <location_histories>
-        <location_history>
-            <id>af5b6e0d-c442-414c-88d2-d95e5cb7affe</id>
-            <located_at>2016-05-24T06:01:11Z</located_at>
-            <loc>123.0</loc>
-            <lan>456.0</lon>
-            <bearing>1.24</bearing>
-            <engine_hours>234.22</engine_hours>
-            <type>vehicle_moving</type>
-            <description>6.2 mi N of San Francisco, CA</description>
-            <speed>50.1</speed>
-            <odometer>7.58693991</odometer>
-            <fuel> 2.96665156</fuel>
-        </location_history>
-        <location_history>
-            <id>d1671b6d-d2ba-49f4-b8c3-8d0782a50d44</id>
-            <located_at>2016-05-24T09:01:11Z</located_at>
-            <loc>123.0</loc>
-            <lan>456.0</lon>
-            <bearing>2.24</bearing>
-            <engine_hours>244.22</engine_hours>
-            <type>breadcrumb</type>
-            <description>6.2 mi N of San Francisco, CA</description>
-            <speed>40.4</speed>
-            <odometer>5.58623553</odometer>
-            <fuel> 1.34645126</fuel>
-        </location_history>
-    </location_histories>
+  <vehicle_locations>
+    <vehicle_location>
+      <id>d261099e-dd3d-4847-bfa1-fb62800bdfb3</id>
+      <located_at>2017-02-14T15:21:45Z</located_at>
+      <lat>33.6667275</lat>
+      <lon>73.0131422</lon>
+      <bearing>98.88</bearing>
+      <engine_hours>362.59728</engine_hours>
+      <type>engine_start</type>
+      <description>6.2 mi N of San Francisco, CA</description>
+      <speed>0</speed>
+      <odometer>904.3573664966549</odometer>
+      <fuel>19.58731560404</fuel>
+      <driver>
+        <id>5</id>
+        <first_name>John</first_name>
+        <last_name>Doe</last_name>
+        <username nil="true"/>
+        <email>542215da3862@keeptruckin.com</email>
+        <driver_company_id nil="true"/>
+        <status>active</status>
+        <role>driver</role>
+      </driver>
+    </vehicle_location>
+    <vehicle_location>
+      <id>fb11576e-d65a-49be-85d3-650d51911c90</id>
+      <located_at>2017-02-14T15:21:46Z</located_at>
+      <lat>33.6667275</lat>
+      <lon>73.0131422</lon>
+      <bearing>148.85</bearing>
+      <engine_hours>362.59728</engine_hours>
+      <type>vehicle_moving</type>
+      <description>6.2 mi N of San Francisco, CA</description>
+      <speed>5.0</speed>
+      <odometer>904.3584884441325</odometer>
+      <fuel>19.58731560404</fuel>
+      <driver>
+        <id>5</id>
+        <first_name>John</first_name>
+        <last_name>Doe</last_name>
+        <username nil="true"/>
+        <email>542215da3862@keeptruckin.com</email>
+        <driver_company_id nil="true"/>
+        <status>active</status>
+        <role>driver</role>
+      </driver>
+    </vehicle_location>
+  </vehicle_locations>
 </data>
 ```
 </div>
